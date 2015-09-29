@@ -95,5 +95,8 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release history
 
+- 1.0.1
+  - Add Go Squared event tracking
+
 - 1.0.0
   - Initial release
