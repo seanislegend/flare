@@ -40,6 +40,7 @@
     }
     try {
       ga('send', track);
+      _gs('event', track[types.action], track);
     } catch (e) {}
   };
 

@@ -19,6 +19,7 @@
   "sub": true,
   "globals": {
     "define": true,
-    "ga": true
+    "ga": true,
+    "_gs": true
   }
 }

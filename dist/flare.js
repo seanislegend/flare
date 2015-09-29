@@ -1,4 +1,4 @@
-/*! flare.js v1.0.0 | (c) 2014 @toddmotto | https://github.com/toddmotto/flare */
+/*! flare.js v1.0.0 | (c) 2015 @toddmotto | https://github.com/toddmotto/flare */
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
     define(factory);
@@ -23,7 +23,7 @@
   var addEvent = function (obj, type, fn) {
     if (obj.attachEvent) {
       obj['e' + type + fn] = fn;
-      obj[type + fn ] = function () {
+      obj[type + fn] = function () {
         obj['e' + type + fn](window.event);
       };
       obj.attachEvent('on' + type, obj[type + fn]);
@@ -41,6 +41,7 @@
     }
     try {
       ga('send', track);
+      _gs('event', track[types.action], track);
     } catch (e) {}
   };
 
